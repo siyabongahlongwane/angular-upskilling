@@ -6,10 +6,11 @@ import { Component, inject } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AsyncPipe } from '@angular/common';
 import { CounterPageActions } from '../../../../core/state/counter/actions';
+import { CustomCounter } from '../../custom-counter/custom-counter';
 
 @Component({
   selector: 'app-counter-parent',
-  imports: [CounterChildOne, CounterChildTwo, AsyncPipe],
+  imports: [CounterChildOne, CounterChildTwo, AsyncPipe, CustomCounter],
   templateUrl: './counter-parent.html',
   styleUrl: './counter-parent.scss',
 })
