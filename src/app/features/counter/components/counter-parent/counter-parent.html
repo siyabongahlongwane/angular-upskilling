@@ -1,0 +1,24 @@
+<div class="text-center">
+  <h2 class="text-primary text-center">Welcome to NgRX Series!</h2>
+
+  <hr />
+
+  <h2>App Counter : {{ counter$ | async }}</h2>
+
+  <div>
+    <button class="btn btn-success m-2" (click)="increment()">Increment</button>
+    <button class="btn btn-warning m-2" (click)="decrement()">Decrement</button>
+    <button class="btn btn-secondary m-2" (click)="reset()">Reset</button>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="col-6">
+      <app-counter-child-one />
+    </div>
+    <div class="col-6">
+      <app-counter-child-two />
+    </div>
+  </div>
+</div>
